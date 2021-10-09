@@ -1,16 +1,39 @@
-# This is a sample Python script.
-
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#def check_input(sequenz1, sequenz2)
+#    if type(sequenz1)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Strg+F8 to toggle the breakpoint.
+def accepted_characters(sequenz):
+    accepted_characters = ["A", "a", "C", "c", "G", "g", "T", "t", "_"]
+    list_acc_bool = []
+    index_unaccepted = []
+    for i in range(len(sequenz)):
+        if sequenz[i] in accepted_characters:
+            list_acc_bool.append(True)
+        else:
+            list_acc_bool.append(False)
+            index_unaccepted.append(i)
+    if index_unaccepted:
+        print(f"nicht akzeptierte Characters an Index: {index_unaccepted}")
+        return False
+    else:
+        return True
 
+print(accepted_characters("AAAfgttt__rr"))
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+""""
+def compare_base (Liste1, Liste2)
+    #[„AA“,“GG“,“CC“,“TT“,“CT“,“TC“,“AG“,”GA”,”CA“,“AC“,“CG“,“GC“,“TA“,“AT“,”TG”,”GT”]
+    # [„AA“,“GG“,“CC“,“TT“,“CT“,“TC“,“AG“,”GA”,”CA“,“AC“,“CG“,“GC“,“TA“,“AT“,”TG”,”GT”]
+    accepted_characters = ("A", "a", "C", "c", "G", "g", "T", "t", "_")
+    if character in accepted characters
+    if nt_list1 ==0"_" or 
+if __name__ == "__main__":
+"""
+sequenz1 =("g","d","f","g")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if type(sequenz1)!= type(""):
+    print(type(sequenz1))
+    sequenz1 = str(sequenz1)
+    print(type(sequenz1))
+    raise Exception
+    print("blub")
