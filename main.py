@@ -37,3 +37,4 @@ if type(sequenz1)!= type(""):
     print(type(sequenz1))
     raise Exception
     print("blub")
+    print("blub2")
