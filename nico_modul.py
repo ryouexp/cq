@@ -1,8 +1,8 @@
 
 # listen zur bewertung der sequenzen
-QualitaetsList e =["AA" ,"GG" ,"CC" ,"TT" ,"CT" ,"TC" ,"AG" ,"GA" ,"CA" ,"AC" ,"CG" ,"GC",
+QualitaetsListe =["AA" ,"GG" ,"CC" ,"TT" ,"CT" ,"TC" ,"AG" ,"GA" ,"CA" ,"AC" ,"CG" ,"GC",
                  "TA" ,"AT" ,"TG" ,"GT"]
-QualitaetsDictionar y ={"|": ["AA" ,"GG" ,"CC" ,"TT"],
+QualitaetsDictionary ={"|": ["AA" ,"GG" ,"CC" ,"TT"],
                       ":": ["CT" ,"TC" ,"AG" ,"GA"],
                       ".": ["CA" ,"AC" ,"CG" ,"GC" ,"TA" ,"AT" ,"TG" ,"GT"],
                       " ": ["A_" ,"_A" ,"G_" ,"_G" ,"C_" ,"_C" ,"T_" ,"_T" ,"__"]}
@@ -12,7 +12,7 @@ QualitaetsDictionar y ={"|": ["AA" ,"GG" ,"CC" ,"TT"],
 def concat_sequnces_in_list(seq1 ,seq2):
     string_seq1 = seq1
     string_seq2 = seq2
-    concat_lis t= []
+    concat_list = []
     index = 0
     concat_pair = ""
     while index < len(string_seq1) and len(string_seq2):
@@ -53,7 +53,7 @@ def alignment_bewertung(seq1 ,seq2):
                 if value == dict_val:
                     evaluate_list.append(sorted_dict[index][0])
 
-    retur n(evaluate_list)
+    return(evaluate_list)
 
 # diese funktion druckt die einzelnen sequenzen wieder aus und fuegt die
 # bewertungen ein
