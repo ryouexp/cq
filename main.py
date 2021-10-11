@@ -37,4 +37,4 @@ if type(sequenz1)!= type(""):
     print(type(sequenz1))
     print("blub")
     print("blub2")
-print("TEST")
+print("TEST VON NICO")
