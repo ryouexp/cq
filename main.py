@@ -38,3 +38,4 @@ if type(sequenz1)!= type(""):
     print("blub")
     print("blub2")
 print("TEST VON NICO")
+print("Neuer Test.")
