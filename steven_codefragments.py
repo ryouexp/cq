@@ -1,4 +1,4 @@
-
+# Dies ist ein Kommentar
 def accepted_characters(sequenz):
     if not type(sequenz) != type(""):
         sequenz = str(sequenz)
