@@ -70,8 +70,8 @@ def print_alignment(seq1 ,seq2):
 # Liste zur Kontrolle ob eine Aminosäuresequenz eingegeben wurde
 
 if __name__ == "__main__":
-    seq1 = "ATCG"
-    seq2 = "ATGC"
+    seq1 = "ATGC"
+    seq2 = "ATCG"
     """string_seq1_liste = [string_seq1]
     string_seq1_liste = [string_seq2]
     print(string_seq1[0])
